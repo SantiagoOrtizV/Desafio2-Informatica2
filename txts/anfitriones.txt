@@ -1,0 +1,11 @@
+documento,nombre,correo,telefono,antiguedad,puntuacion,codigosAlojamientos
+123456789,Andrés Camilo,acamilor@example.com,3101234567,24,4.8,A001;A005
+987654321,Laura Martínez,lmartinez@example.com,3209876543,12,4.5,A002
+234567890,Carlos Gómez,cgomez@example.com,3112345678,36,4.9,A003;A007
+345678901,Maria Torres,mariatorres@example.com,3123456789,18,4.7,A004
+456789012,Jorge Pérez,jperez@example.com,3134567890,6,4.2,A006
+567890123,Ana Sánchez,asanchez@example.com,3145678901,30,4.6,A008
+678901234,Luis Ramírez,lramirez@example.com,3156789012,9,4.3,A009
+789012345,Paula Rojas,projas@example.com,3167890123,15,4.4,A010
+890123456,David López,dlopez@example.com,3178901234,21,4.5,A001
+901234567,Carolina Díaz,cdiaz@example.com,3189012345,27,4.8,A002;A004

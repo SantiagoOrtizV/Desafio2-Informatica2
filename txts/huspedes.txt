@@ -1,0 +1,11 @@
+documento,nombre,correo,telefono,antiguedad,puntuacion
+1029384756,Sofía Martínez,sofiam@example.com,3012345678,14,4.7
+5647382910,Andrés Gómez,andresg@example.com,3023456789,22,4.3
+8374659201,Valentina Ruiz,valentinar@example.com,3034567890,8,4.6
+1928374650,Camilo Fernández,camilof@example.com,3045678901,30,4.9
+3748291056,Daniela Soto,danielas@example.com,3056789012,16,4.4
+9182736450,Luis Herrera,luish@example.com,3067890123,12,4.2
+5647382912,Isabella Castro,isabellac@example.com,3078901234,20,4.8
+2938475610,Nicolás Moreno,nicolasm@example.com,3089012345,18,4.5
+8473629105,Mariana Vega,marianav@example.com,3090123456,24,4.7
+1029384751,Juan Pérez,juanp@example.com,3101234567,26,4.1

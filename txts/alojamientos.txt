@@ -1,0 +1,11 @@
+codigo,nombre,documentoAnfitrion,departamento,municipio,tipo,direccion,precio,amenidades,fechasReservadas
+A001,La Casa Verde,123456789,Antioquia,Medellín,Casa,Calle 45 #12-34,120000,ascensor;piscina;aire acondicionado,2025-06-01;2025-06-02;2025-06-15
+A002,Aparta Suave,987654321,Antioquia,Rionegro,Apartamento,Carrera 8 #45-67,90000,aire acondicionado;caja fuerte,2025-07-10;2025-07-11
+A003,Refugio Montañés,234567890,Caldas,Manizales,Casa,Calle 10 #7-89,80000,piscina;parqueadero,2025-05-20;2025-05-21
+A004,Loft Urbano,345678901,Valle,Cali,Apartamento,Carrera 25 #19-45,110000,ascensor;aire acondicionado;caja fuerte,2025-08-01;2025-08-02;2025-08-03
+A005,Casa Colonial,456789012,Antioquia,Envigado,Casa,Calle 30 #10-20,100000,piscina;patio;parqueadero,2025-06-05;2025-06-06
+A006,Aparta Céntrico,567890123,Atlántico,Barranquilla,Apartamento,Carrera 15 #22-10,85000,ascensor;aire acondicionado,2025-07-15;2025-07-16
+A007,Villa Serena,678901234,Risaralda,Pereira,Casa,Calle 12 #34-56,95000,patio;parqueadero,2025-09-01;2025-09-02
+A008,Estudio Moderno,789012345,Bogotá,Bogotá,Apartamento,Carrera 10 #30-50,105000,ascensor;aire acondicionado;caja fuerte,2025-10-10
+A009,Cabaña Rural,890123456,Quindío,Armenia,Casa,Calle 18 #20-10,75000,piscina;patio,2025-11-05;2025-11-06
+A010,Aparta Mar,901234567,Magdalena,Santa Marta,Apartamento,Carrera 5 #15-30,130000,ascensor;piscina;parqueadero,2025-12-01;2025-12-02

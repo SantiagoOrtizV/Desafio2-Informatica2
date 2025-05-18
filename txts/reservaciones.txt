@@ -1,0 +1,11 @@
+codigoReserva,fechaEntrada,duracion,codAlojamiento,docHuesped,metodoPago,fechaPago,monto,anotacion
+R001,2025-06-15,5,A001,1029384756,PSE,2025-05-20,350000,Preferir habitaciones con buena iluminación
+R002,2025-07-01,3,A003,5647382910,TCrédito,2025-06-25,210000,Es necesario estacionamiento
+R003,2025-08-10,7,A005,8374659201,PSE,2025-07-30,490000,Evitar pisos altos
+R004,2025-06-20,4,A002,1928374650,TCrédito,2025-06-15,280000,Se necesita cuna para bebé
+R005,2025-09-05,2,A004,3748291056,PSE,2025-08-20,140000,Anfitrión muy amable
+R006,2025-07-15,6,A006,9182736450,TCrédito,2025-07-01,420000,Prefiere llegada después de las 3 pm
+R007,2025-08-25,3,A007,5647382912,PSE,2025-08-10,210000,Solicita limpieza diaria
+R008,2025-06-30,5,A008,2938475610,TCrédito,2025-06-15,350000,Requiere wifi estable
+R009,2025-07-20,4,A009,8473629105,PSE,2025-07-10,280000,No se permiten mascotas
+R010,2025-09-10,3,A010,1029384751,TCrédito,2025-08-30,210000,Solicita desayuno incluido

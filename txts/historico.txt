@@ -1,0 +1,1 @@
+codigoReserva,fechaEntrada,duracion,codAlojamiento,docHuesped,metodoPago,fechaPago,monto,anotacion
