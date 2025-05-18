@@ -1,5 +1,10 @@
 #include <iostream>
 #include "funcionesMenu.h"
+#include "huesped.h"
+#include "anfitrion.h"
+#include "alojamiento.h"
+#include "reservacion.h"
+#include "fecha.h"
 
 using namespace std;
 
