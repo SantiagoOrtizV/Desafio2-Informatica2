@@ -6,6 +6,35 @@ Fecha::Fecha(unsigned int _dia, unsigned int _mes, unsigned int _anio) {
     anio = _anio;
 }
 
+unsigned int Fecha::getDia() const {
+    return dia; }
+
+unsigned int Fecha::getMes() const {
+    return mes; }
+
+unsigned int Fecha::getAnio() const {
+    return anio; }
+
+bool Fecha::operator<(const Fecha& otra) const {
+    if (anio < otra.anio)
+        return true;
+    else if (anio == otra.anio && mes < otra.mes)
+        return true;
+    else if (anio == otra.anio && mes == otra.mes && dia < otra.dia)
+        return true;
+    else
+        return false;
+}
+
+bool Fecha::operator==(const Fecha& otra) const {
+    return (dia == otra.dia && mes == otra.mes && anio == otra.anio);
+}
+
+bool Fecha::operator>(const Fecha& otra) const {
+    return !(*this < otra) && !(*this == otra);
+}
+
+
 unsigned int Fecha::diasEnMes(unsigned int mes, unsigned int anio)const{
     switch (mes) {
     case 1: case 3: case 5: case 7: case 8: case 10: case 12:
@@ -46,3 +75,5 @@ bool Fecha::esFechaValida() const {
 
     return true;
 }
+
+
