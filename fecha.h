@@ -8,6 +8,7 @@ private:
     unsigned int anio;
 
 public:
+    Fecha();
     Fecha(unsigned int _dia, unsigned int _mes, unsigned int _anio);
     unsigned int getDia() const;
     unsigned int getMes() const;

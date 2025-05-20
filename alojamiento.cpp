@@ -11,3 +11,15 @@ Alojamiento::Alojamiento(unsigned long _codigo, string _nombre, unsigned long _d
     precio = _precio;
     amenidades = _amenidades;
 }
+
+bool Alojamiento::estaDisponible(Fecha* nuevasFechas, unsigned int cantidadNuevas, Fecha* fechasOcupadas, unsigned int cantidadOcupadas) {
+    for (unsigned int i = 0; i < cantidadNuevas; ++i) {
+        for (unsigned int j = 0; j < cantidadOcupadas; ++j) {
+            if (nuevasFechas[i] == fechasOcupadas[j]) {
+                return false; // Hay conflicto
+            }
+        }
+    }
+    return true; // Todas las fechas están disponibles
+}
+
