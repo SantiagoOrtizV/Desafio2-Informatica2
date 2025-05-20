@@ -1,5 +1,12 @@
 #include "fecha.h"
 
+Fecha::Fecha() {
+    dia = 1;
+    mes = 1;
+    anio = 2000;
+}
+
+
 Fecha::Fecha(unsigned int _dia, unsigned int _mes, unsigned int _anio) {
     dia = _dia;
     mes = _mes;
