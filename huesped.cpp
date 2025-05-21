@@ -1,9 +1,19 @@
 #include "huesped.h"
 
-Huesped::Huesped(unsigned long _documento, string _nombre, string _correo, unsigned long _telefono, float _puntacion) {
+Huesped::Huesped() {
+    documento = "";
+    nombre = "";
+    correo = "";
+    telefono = "";
+    antiguedad = 0;
+    puntuacion = 0.0;
+}
+
+Huesped::Huesped(string _documento, string _nombre, string _correo, string _telefono, unsigned short int _antiguedad, float _puntuacion) {
     documento = _documento;
     nombre = _nombre;
     correo = _correo;
     telefono = _telefono;
-    puntacion = _puntacion;
+    antiguedad = _antiguedad;
+    puntuacion = _puntuacion;
 }

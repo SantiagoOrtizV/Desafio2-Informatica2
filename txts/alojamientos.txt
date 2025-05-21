@@ -1,4 +1,3 @@
-codigo,nombre,documentoAnfitrion,departamento,municipio,tipo,direccion,precio,amenidades,fechasReservadas
 A001,La Casa Verde,123456789,Antioquia,Medellín,Casa,Calle 45 #12-34,120000,ascensor;piscina;aire acondicionado,2025-06-01;2025-06-02;2025-06-15
 A002,Aparta Suave,987654321,Antioquia,Rionegro,Apartamento,Carrera 8 #45-67,90000,aire acondicionado;caja fuerte,2025-07-10;2025-07-11
 A003,Refugio Montañés,234567890,Caldas,Manizales,Casa,Calle 10 #7-89,80000,piscina;parqueadero,2025-05-20;2025-05-21

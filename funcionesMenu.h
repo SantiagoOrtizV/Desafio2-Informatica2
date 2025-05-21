@@ -6,14 +6,48 @@
 #include <anfitrion.h>
 #include <fstream>
 #include <sstream>
+#include <cctype>
 
 using namespace std;
 
+string pedirDocumentoValido() {
+    string documento;
+
+    while (true) {
+        cout << "Ingrese su numero de documento: ";
+        cin >> documento;
+
+        if (documento.length() > 10) {
+            cout << "Error: El documento no debe tener más de 10 dígitos.\n";
+            continue;
+        }
+
+        bool esNumerico = true;
+        for (char c : documento) {
+            if (!isdigit(c)) {
+                esNumerico = false;
+                break;
+            }
+        }
+
+        if (!esNumerico) {
+            cout << "Error: El documento debe contener solo números.\n";
+            continue;
+        }
+
+        break;
+    }
+
+    return documento;
+}
+
 bool inicioCargaHuesped(Huesped &huesped0){
     string ruta;
-    cout << "ruta: ";
+    cout << "ruta huespedes: "; //luego quitar y poner ruta fija
+    cin >> ruta;
     ifstream archivo(ruta);
     string linea;
+    string documentoBuscado = pedirDocumentoValido();
 
     while (getline(archivo, linea)) {
         stringstream ss(linea);
@@ -27,7 +61,7 @@ bool inicioCargaHuesped(Huesped &huesped0){
             getline(ss, telefono, ',');
             getline(ss, antiguedadStr, ',');
             getline(ss, puntuacionStr, ',');
-            int antiguedad = stoi(antiguedadStr);
+            unsigned short int antiguedad = stoi(antiguedadStr);
             float puntuacion = stof(puntuacionStr);
             huesped0 = Huesped(doc,nombre,correo,telefono,antiguedad,puntuacion);
             return true;
@@ -39,10 +73,11 @@ bool inicioCargaHuesped(Huesped &huesped0){
 
 bool inicioCargaAnfitrion(Anfitrion &Anfitrion0){
     string ruta;
-    cout << "ruta: ";
-    getline(ruta, '\n');
+    cout << "ruta anfitriones: "; //luego quitar y poner ruta fija
+    cin >> ruta;
     ifstream archivo(ruta);
     string linea;
+    string documentoBuscado = pedirDocumentoValido();
 
     while (getline(archivo, linea)) {
         stringstream ss(linea);
@@ -71,12 +106,12 @@ void menuHuesped() {
     Huesped huesped0;
 
     while (true){
-        if (inicioCargaHuesped(&huesped0)){
+        if (inicioCargaHuesped(huesped0)){
             do {
-                cout << "\n------ MENU HUESPED ------\n";
+                cout << "\n------ MENU HUESPED ------\n\n";
                 cout << "(0) Reservar alojamiento\n";
                 cout << "(1) Anular reservacion\n";
-                cout << "(2) Cerrar sesion\n";
+                cout << "(2) Cerrar sesion\n\n";
                 cout << "Ingrese la opcion que desea realizar: ";
                 cin >> opcion;
 
@@ -117,13 +152,13 @@ void menuAnfitrion(){
     unsigned int opcion;
     Anfitrion anfitrion0;
     while (true){
-        if (inicioCargaAnfitrion(&anfitrion0)){
+        if (inicioCargaAnfitrion(anfitrion0)){
             do {
-                cout << "\n------ MENU ANFITRION ------\n";
+                cout << "\n------ MENU ANFITRION ------\n\n";
                 cout << "(0) Consultar reservaciones activas\n";
                 cout << "(1) Anular reservacion\n";
                 cout << "(2) Actualizar historico\n";
-                cout << "(3) Cerrar sesion\n";
+                cout << "(3) Cerrar sesion\n\n";
                 cout << "Ingrese la opcion que desea realizar: ";
                 cin >> opcion;
 

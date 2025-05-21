@@ -6,14 +6,16 @@ using namespace std;
 
 class Huesped {
 private:
-    unsigned long documento;
+    string documento;
     string nombre;
     string correo;
-    unsigned long telefono;
-    float puntacion;
+    string telefono;
+    unsigned short int antiguedad;
+    float puntuacion;
 
 public:
-    Huesped(unsigned long _documento, string _nombre, string _correo, unsigned long _telefono, float _puntacion);
+    Huesped();
+    Huesped(string _documento, string _nombre, string _correo, string _telefono, unsigned short int _antiguedad, float _puntuacion);
 };
 
 #endif // HUESPED_H
