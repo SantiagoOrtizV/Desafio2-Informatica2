@@ -11,19 +11,27 @@ Reservacion::Reservacion(unsigned long _codigoReserva, unsigned int _duracion, u
 }
 
 Fecha* Reservacion::obtenerFechasReservadas() const {
-    // Crear un arreglo dinámico para guardar todas las fechas
-    unsigned int diasHospedaje;
-    Fecha* fechas = new Fecha[diasHospedaje];
-
-
-    Fecha fechaEntrada;// Copiar la fecha de entrada
+    Fecha* fechas = new Fecha[duracion];
     Fecha actual = fechaEntrada;
 
-    // Generar cada día uno por uno
     for (unsigned int i = 0; i < duracion; ++i) {
         fechas[i] = actual;
-        actual.sumarDias(1); // avanzamos un día
+        actual.sumarDias(1);
     }
 
     return fechas;
 }
+
+bool Reservacion::reservacionEsValida(Fecha* fechas, unsigned int nFechas, Fecha* fechasReservadas, unsigned int nReservadas) {
+    for (unsigned int i = 0; i < nFechas; ++i) {
+        for (unsigned int j = 0; j < nReservadas; ++j) {
+            if (fechas[i] == fechasReservadas[j]) {
+                return false;  // Colisión encontrada
+            }
+        }
+    }
+    return true;  // No hubo colisiones
+}
+
+
+
