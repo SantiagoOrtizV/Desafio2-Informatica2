@@ -1,4 +1,5 @@
 #include "huesped.h"
+#include <iostream>
 
 Huesped::Huesped() {
     documento = "";
@@ -16,4 +17,13 @@ Huesped::Huesped(string _documento, string _nombre, string _correo, string _tele
     telefono = _telefono;
     antiguedad = _antiguedad;
     puntuacion = _puntuacion;
+}
+
+void Huesped::mostrar(){
+    cout << "documento: " << documento << endl;
+    cout << "nombre: " << nombre << endl;
+    cout << "correo: " << correo << endl;
+    cout << "telefono: " << telefono << endl;
+    cout << "antiguedad: " << antiguedad << endl;
+    cout << "puntuacion: " << puntuacion << endl;
 }

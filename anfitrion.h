@@ -16,6 +16,7 @@ private:
 public:
     Anfitrion();
     Anfitrion(string _documento, string _nombre, string _correo, string _telefono, unsigned short int _antiguedad, float _puntuacion);
+    void mostrar();
 };
 
 #endif // ANFITRION_H

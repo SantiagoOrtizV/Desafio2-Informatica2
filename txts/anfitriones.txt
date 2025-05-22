@@ -1,11 +1,10 @@
-documento,nombre,correo,telefono,antiguedad,puntuacion
-1234567890,Andrés Camilo,acamilor@example.com,3101234567,24,4.8
+1234567890,Andres Camilo,acamilor@example.com,3101234567,24,4.8
 9876543210,Laura Martínez,lmartinez@example.com,3209876543,12,4.5
-2345678900,Carlos Gómez,cgomez@example.com,3112345678,36,4.9
+2345678900,Carlos Gomez,cgomez@example.com,3112345678,36,4.9
 3456789010,Maria Torres,mariatorres@example.com,3123456789,18,4.7
-4567890120,Jorge Pérez,jperez@example.com,3134567890,6,4.2
-5678901230,Ana Sánchez,asanchez@example.com,3145678901,30,4.6
-6789012340,Luis Ramírez,lramirez@example.com,3156789012,9,4.3
+4567890120,Jorge Perez,jperez@example.com,3134567890,6,4.2
+5678901230,Ana Sanchez,asanchez@example.com,3145678901,30,4.6
+6789012340,Luis Ramirez,lramirez@example.com,3156789012,9,4.3
 7890123450,Paula Rojas,projas@example.com,3167890123,15,4.4
 8901234560,David López,dlopez@example.com,3178901234,21,4.5
 9012345670,Carolina Díaz,cdiaz@example.com,3189012345,27,4.8

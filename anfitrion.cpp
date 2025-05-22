@@ -1,4 +1,5 @@
 #include "anfitrion.h"
+#include <iostream>
 
 Anfitrion::Anfitrion() {
     documento = "";
@@ -16,4 +17,13 @@ Anfitrion::Anfitrion(string _documento, string _nombre, string _correo, string _
     telefono = _telefono;
     antiguedad = _antiguedad;
     puntuacion = _puntuacion;
+}
+
+void Anfitrion::mostrar(){
+    cout << "documento: " << documento << endl;
+    cout << "nombre: " << nombre << endl;
+    cout << "correo: " << correo << endl;
+    cout << "telefono: " << telefono << endl;
+    cout << "antiguedad: " << antiguedad << endl;
+    cout << "puntuacion: " << puntuacion << endl;
 }

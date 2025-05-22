@@ -16,6 +16,7 @@ private:
 public:
     Huesped();
     Huesped(string _documento, string _nombre, string _correo, string _telefono, unsigned short int _antiguedad, float _puntuacion);
+    void mostrar();
 };
 
 #endif // HUESPED_H
