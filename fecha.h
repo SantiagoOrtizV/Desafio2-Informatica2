@@ -1,6 +1,12 @@
 #ifndef FECHA_H
 #define FECHA_H
 
+#include <sstream>
+#include <string>
+#include <iomanip>
+using namespace std;
+
+
 class Fecha {
 private:
     unsigned int dia;
@@ -19,6 +25,9 @@ public:
     unsigned int diasEnMes(unsigned int mes, unsigned int anio)const;
     void sumarDias(unsigned int diasHospedajes);
     bool esFechaValida() const;
+    string toString() const;
+    static Fecha desdeString(const string& str);
+    Fecha* obtenerRangoFechas(unsigned int duracion);
 
 
 };

@@ -33,5 +33,7 @@ bool Reservacion::reservacionEsValida(Fecha* fechas, unsigned int nFechas, Fecha
     return true;  // No hubo colisiones
 }
 
+unsigned long Reservacion::getCodigo() const {
+    return codigo; }
 
 

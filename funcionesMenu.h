@@ -2,11 +2,11 @@
 #define FUNCIONESMENU_H
 
 #include <iostream>
-#include <huesped.h>
-#include <anfitrion.h>
 #include <fstream>
 #include <sstream>
 #include <cctype>
+#include "huesped.h"
+#include "anfitrion.h"
 
 using namespace std;
 

@@ -13,6 +13,7 @@ SOURCES += \
 HEADERS += \
     alojamiento.h \
     anfitrion.h \
+    auxiliarhistoricoeliminardespues.h \
     fecha.h \
     funcionesMenu.h \
     huesped.h \

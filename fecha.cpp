@@ -83,6 +83,27 @@ bool Fecha::esFechaValida() const {
     return true;
 }
 
+string Fecha::toString() const {
+    ostringstream oss;
+    oss << anio << "-" << setw(2) << setfill('0') << mes << "-" << setw(2) << setfill('0') << dia;
+    return oss.str();
+}
+
+Fecha Fecha::desdeString(const string& str) {
+    int dia, mes, anio;
+    sscanf(str.c_str(), "%d-%d-%d", &anio, &mes, &dia);
+    return Fecha(dia, mes, anio);
+}
+
+Fecha* Fecha::obtenerRangoFechas(unsigned int duracion) {
+    Fecha* fechas = new Fecha[duracion];
+    Fecha copia = *this;
+    for (unsigned int i = 0; i < duracion; ++i) {
+        fechas[i] = copia;
+        copia.sumarDias(1);
+    }
+    return fechas;
+}
 
 
 

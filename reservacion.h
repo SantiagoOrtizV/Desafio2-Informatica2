@@ -1,7 +1,7 @@
 #ifndef RESERVACION_H
 #define RESERVACION_H
 
-#include<fecha.h>
+#include"fecha.h"
 #include <string>
 using namespace std;
 
@@ -19,6 +19,7 @@ public:
     Reservacion(unsigned long _codigoReserva, unsigned int _duracion, unsigned long _codigo, unsigned long _documentoHuesped, string _metodoPago, float _monto, string _anotaciones);
     Fecha* obtenerFechasReservadas() const ;
     bool reservacionEsValida(Fecha* fechas, unsigned int nFechas, Fecha* fechasReservadas, unsigned int nReservadas);
+    unsigned long getCodigo () const;
 };
 
 #endif // RESERVACION_H

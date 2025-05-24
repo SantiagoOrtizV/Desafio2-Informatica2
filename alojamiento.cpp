@@ -23,3 +23,6 @@ bool Alojamiento::estaDisponible(Fecha* nuevasFechas, unsigned int cantidadNueva
     return true; // Todas las fechas están disponibles
 }
 
+unsigned long Alojamiento::getDocumento() const {
+    return documento; }
+
